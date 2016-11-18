@@ -1,0 +1,219 @@
+  609  git config --global user.name "Luis Gustavo"
+  611  git config --global user.email "luis.sales@iff.edu.br"
+  612  git config --global color.ui true
+  613  history | grep git
+  617  mkdir gitHub
+  618  cd gitHub/
+  620  history | grep git
+  625  git
+  627  history | grep git
+  628  mkdir aulagit
+  629  cd aulagit/
+  631  git init
+  634  cd .git/
+  641  git status
+  642  git add arquivo.txt 
+  643  git status
+  644  git commit -m "Meu primeiro commit"
+  645  git status
+  646  git log
+  648  git status
+  649  git add arquivo.txt 
+  650  git status
+  651  git log
+  652  git commit -m "Alterando o arquivo"
+  653  git status
+  654  git log
+  658  git status
+  659  git add arquivo2.txt 
+  660  git status
+  661  git commit -m "Primeira versao"
+  662  git status
+  663  git log
+  666  git status
+  667  git add arquivo2.txt 
+  668  git commit -m "Versão 2 do segundo arquivo"
+  669  git log
+  672  git status
+  673  git add arquivo.txt
+  674  git commit -m "Terceira versao do arquivo.txt"
+  675  git status
+  676  git log
+  683  git status
+  684  git log
+  687  git status
+  688  git add teste.php 
+  689  git status
+  690  git commit
+  691  git log
+  695  git status
+  696  git commit -a -m "Addicionando e comitando todos com o comit -a"
+  697  git log
+  699  git status
+  701  git log
+  702  git log -p
+  703  git log -p -2
+  704  git log --stat
+  705  git log --pretty=oneline
+  706  git log --pretty=format:"%h - %an, %ar : %s"
+  707  git log --since=2.days
+  708  git log --since=1.hour
+  709  git log --since=10.minutes
+  710  git log --since=20.minutes
+  714  git status
+  715  nano .gitignore
+  716  git status
+  718  git status
+  719  git add .gitignore 
+  720  git status
+  721  git commit -m "Adicionando o .gitignore"
+  722  git status
+  723  git log
+  726  git add teste2.txt 
+  727  git status
+  728  git reset HEAD teste2.txt
+  729  git status
+  732  git status
+  733  git add .
+  734  git status
+  735  git reset HEAD teste2.txt
+  736  git status
+  737  git reset HEAD teste3.txt
+  738  git reset HEAD teste4.txt
+  739  git status
+  740  git log
+  741  git log --single=oneline
+  742  git checkout
+  743  git checkoout cd7157d8cb4e3fa24c5ae7ec1d060e0edff136a4
+  744  git checkout cd7157d8cb4e3fa24c5ae7ec1d060e0edff136a4
+  745  git branch
+  747  git status
+  748  git log
+  749  git checkout 4475d36806fa3f2c58142095d03ac947a19191ea
+  751  git log
+  752  git status
+  753  git branch
+  756  git checkout master
+  759  git log
+  760  git reset HEAD~1 --soft
+  761  git status
+  762  git commit -m 'colocando o ignore'
+  763  git log
+  764  git reset HEAD~1 --hard
+  765  git status
+  766  git log
+  767  nano .gitignore
+  768  git status
+  769  git add .gitignore 
+  770  git add .
+  771  git status
+  772  git reset HEAD teste*.txt
+  773  git status
+  774  git commit -m 'Inserindo o .gitignore'
+  775  git status
+  776  git log 
+  777  git reset HEAD~1 --soft
+  778  git status
+  779  git log
+  780  git checkout master
+  781  git status
+  782  history | grep git
+  783  git branch 
+  784  git status
+  785  git lot
+  786  git branc
+  787  git branch
+  788  git checkout -b funcionalidade1
+  789  git branch
+  794  git status
+  795  git add funcionalidade1.txt 
+  796  git commit -m "adicionando funcionalidade1"
+  797  git log
+  798  git checkout master
+  800  git log
+  802  git status
+  803  git add arquivo.txt 
+  804  git commit -m "Arquivo modificando"
+  805  git log
+  806  git checkout funcionalidade1
+  808  git log
+  809  git branch 
+  810  man git
+  811  git checkou master
+  812  git checkout master
+  813  man git
+  814  git branch
+  817  git branch
+  825  cd gitHub/
+  828  cd aulagit/
+  830  git branch
+  831  git branch funcionalidade1 
+  832  git checkout funcionalidade1 
+  834  git status
+  835  git checkout master
+  836  git status
+  838  git log
+  840  git branch
+  841  git merge funcionalidade1
+  842  git log
+  845  git reset HEAD~1 --hard
+  846  git log
+  847  git branch
+  848  git rebase funcionalidade1 
+  849  git log
+  852  git log
+  853  git branch
+  856  git status
+  857  git add arquivomaster.txt 
+  858  git commit arquivomaster.txt 
+  859  git log
+  860  git checkout -b
+  861  git checkout -b funcionalidade5
+  862  git checkout funcionalidade5
+  863  git branch
+  867  git branch master 
+  868  git checkout master
+  870  git checkout funcionalidade5
+  871  git status
+  872  git add funcionalidade5.txt 
+  873  git commit funcionalidade5.txt -m "Comitei o funcionalidade 5 depois do arquivo master"
+  874  git log
+  876  git checkout master
+  880  git status
+  881  git add funcionalidade1.txt 
+  882  git commit funcionalidade1.txt -m "Modifiquei o funcionalidade1 depois de ter criado o branch funcionalidade5"
+  883  git log
+  884  git checkout master
+  885  git log
+  886  git checkout funcionalidade5 
+  889  history | grep git | less
+  890  git checkout master 
+  891  git rebase funcionalidade5
+  892  git log
+  903  cat .git/config 
+  904  git remote add origin https://github.com/cryzander/php-school-of-net.git
+  905  cat .git/config 
+  906  git push origin master
+  907  git push -u origin master
+  908  ssh -T git@github.com
+  909  git remote add origin git@github.com:cryzander/php-school-of-net.git
+  910  git push -u origin master
+  912  cd .git/
+  919  git remote add origin git@github.com:cryzander/php-school-of-net.git
+  920  cat .git/config
+  921  git push -u origin master
+  922  git branch
+  923  git checkout funcionalidade1
+  925  git push -u origin funcionalidade1
+  928  rm -rf aulagit/
+  929  git clone git@github.com:cryzander/php-school-of-net.git aulagit
+  931  cd aulagit/
+  934  git log
+  935  git branch
+  936  git branch -a
+  937  git checkout -b funcionalidade1 /origin/funcionalidade1
+  938  git checkout -b funcionalidade1 origin/funcionalidade1
+  940  git pull
+  941  git branch
+  942  git log
+  944  history | grep git >> comandosgit.txt
